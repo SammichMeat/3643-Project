@@ -1,0 +1,7 @@
+C:\Users\adaml\OneDrive\Documents\GitHub\3643-Project\3643 Calculator\3643 Calculator\bin\Debug\_3643_Calculator.exe
+C:\Users\adaml\OneDrive\Documents\GitHub\3643-Project\3643 Calculator\3643 Calculator\bin\Debug\_3643_Calculator.pdb
+C:\Users\adaml\OneDrive\Documents\GitHub\3643-Project\3643 Calculator\3643 Calculator\obj\Debug\3643 Calculator.csproj.AssemblyReference.cache
+C:\Users\adaml\OneDrive\Documents\GitHub\3643-Project\3643 Calculator\3643 Calculator\obj\Debug\3643 Calculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\adaml\OneDrive\Documents\GitHub\3643-Project\3643 Calculator\3643 Calculator\obj\Debug\3643 Calculator.csproj.CoreCompileInputs.cache
+C:\Users\adaml\OneDrive\Documents\GitHub\3643-Project\3643 Calculator\3643 Calculator\obj\Debug\_3643_Calculator.exe
+C:\Users\adaml\OneDrive\Documents\GitHub\3643-Project\3643 Calculator\3643 Calculator\obj\Debug\_3643_Calculator.pdb
