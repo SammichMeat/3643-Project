@@ -1,23 +1,24 @@
 using _3643_Calculator.Properties;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel.Client;
 
 namespace TestProject1;
 using NUnit.Framework;
 public class Tests
 {
+    private CalculatorEngine calc;
     [SetUp]
     public void Setup()
     {
-        CalculatorEngine calc = new CalculatorEngine();
+        calc = new CalculatorEngine();
     }
 
     [Test]
-    public void Test1()
+    public void CalculatorEngine_DivideMethod_ThrowsErrorIfDivideByZero()
     {
         //arrange
-        
+        calc.SetDoubleA(10);
+        calc.SetDoubleB(0);
         //act
-        
         //assert
-        Assert.Pass();
     }
 }

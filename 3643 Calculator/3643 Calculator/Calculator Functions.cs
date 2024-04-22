@@ -4,33 +4,54 @@ namespace _3643_Calculator.Properties
 {
     public class CalculatorEngine
     {
-        public double Add(double x, double y)
+        private double doubleA;
+        private double doubleB;
+
+        public double GetDoubleA()
+        {
+            return doubleA;
+        }
+
+        public double GetDoubleB()
+        {
+            return doubleB;
+        }
+
+        public void SetDoubleA(double a)
+        {
+            doubleA = a;
+        }
+        public void SetDoubleB(double b)
+        {
+            doubleB = b;
+        }
+        public double Add()
         {
             //preq-ENGINE-3
-            return x + y;
+            return doubleA + doubleB;
         }
 
-        public double Subtract(double x, double y)
+        public double Subtract()
         {
             //preq-ENGINE-4
-            return x - y;
+            return doubleA - doubleB;
         }
 
-        public double Multiply(double x, double y)
+        public double Multiply()
         {
             //preq-ENGINE-5
-            return x * y;
+            return doubleA * doubleB;
         }
 
-        public double Divide(double x, double y)
+        public double Divide()
         {
             //preq-ENGINE-7
-            if (y == 0)
+            if (doubleB == 0)
             {
                 throw new DivideByZeroException();
             }
 
-            return x / y;
+            return doubleA / doubleB;
         }
 
         public double Equals(double x, double y)
@@ -39,15 +60,15 @@ namespace _3643_Calculator.Properties
             return 0d;
         }
 
-        public double RaiseToPower(double x, double y)
+        public double RaiseToPower()
         {
             //preq-ENGINE-9
-            return Math.Pow(x, y);
+            return Math.Pow(doubleA, doubleB);
         }
 
-        public double Logarithm(double x, double y)
+        public double Logarithm()
         {
-            return Math.Log(x, y);
+            return Math.Log(doubleA, doubleB);
         }
     }
 }

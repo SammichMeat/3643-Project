@@ -9,8 +9,9 @@ namespace _3643_Calculator
         public static void Main(string[] args)
         {
             CalculatorEngine calc = new CalculatorEngine();
-            Console.WriteLine(calc.Add(3,4));
-            Console.WriteLine(calc.Divide(2, 0));
+            calc.SetDoubleA(10);
+            calc.SetDoubleB(0);
+            Console.WriteLine(calc.Divide());
         }
     }
 }
