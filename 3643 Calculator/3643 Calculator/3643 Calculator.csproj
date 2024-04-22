@@ -43,7 +43,6 @@
     <ItemGroup>
         <Compile Include="AssemblyInfo.cs" />
         <Compile Include="Calculator Functions.cs" />
-        <Compile Include="CalculatorFunctionsTests.cs" />
         <Compile Include="Program.cs" />
     </ItemGroup>
     <ItemGroup>
