@@ -1,51 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Downloads\\3643-Project\\3643 Calculator\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "D:\\Downloads\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj": {
-      "version": "1.0.0",
+    "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Downloads\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj",
-        "projectName": "_3643_Calculator",
-        "projectPath": "D:\\Downloads\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj",
-        "packagesPath": "C:\\Users\\Adam.DESKTOP-1CEE98K.000\\.nuget\\packages\\",
-        "outputPath": "D:\\Downloads\\3643-Project\\3643 Calculator\\3643 Calculator\\obj\\",
-        "projectStyle": "PackagesConfig",
-        "configFilePaths": [
-          "C:\\Users\\Adam.DESKTOP-1CEE98K.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net48"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
+        "projectUniqueName": "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj",
+        "projectName": "3643 Calculator",
+        "projectPath": "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
           }
-        },
-        "packagesConfigPath": "D:\\Downloads\\3643-Project\\3643 Calculator\\3643 Calculator\\packages.config"
+        }
       },
       "frameworks": {
         "net48": {}
       }
     },
-    "D:\\Downloads\\3643-Project\\3643 Calculator\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Downloads\\3643-Project\\3643 Calculator\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "D:\\Downloads\\3643-Project\\3643 Calculator\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\Adam.DESKTOP-1CEE98K.000\\.nuget\\packages\\",
-        "outputPath": "D:\\Downloads\\3643-Project\\3643 Calculator\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\WebApplication1\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\adaml\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Adam.DESKTOP-1CEE98K.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adaml\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,8 +43,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Downloads\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj": {
-                "projectPath": "D:\\Downloads\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj"
+              "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj": {
+                "projectPath": "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj"
               }
             }
           }
@@ -69,11 +53,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {

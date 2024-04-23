@@ -378,13 +378,13 @@
           }
         }
       },
-      "_3643_Calculator/1.0.0": {
+      "3643 Calculator/1.0.0": {
         "type": "project",
         "compile": {
-          "bin/placeholder/_3643_Calculator.dll": {}
+          "bin/placeholder/3643 Calculator.dll": {}
         },
         "runtime": {
-          "bin/placeholder/_3643_Calculator.dll": {}
+          "bin/placeholder/3643 Calculator.dll": {}
         }
       }
     }
@@ -980,7 +980,7 @@
         "version.txt"
       ]
     },
-    "_3643_Calculator/1.0.0": {
+    "3643 Calculator/1.0.0": {
       "type": "project",
       "path": "../3643 Calculator/3643 Calculator.csproj",
       "msbuildProject": "../3643 Calculator/3643 Calculator.csproj"
@@ -988,28 +988,28 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "3643 Calculator >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "NUnit >= 3.14.0",
       "NUnit.Analyzers >= 3.9.0",
       "NUnit3TestAdapter >= 4.5.0",
-      "_3643_Calculator >= 1.0.0",
       "coverlet.collector >= 6.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Adam.DESKTOP-1CEE98K.000\\.nuget\\packages\\": {}
+    "C:\\Users\\adaml\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Downloads\\3643-Project\\3643 Calculator\\TestProject1\\TestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\TestProject1\\TestProject1.csproj",
       "projectName": "TestProject1",
-      "projectPath": "D:\\Downloads\\3643-Project\\3643 Calculator\\TestProject1\\TestProject1.csproj",
-      "packagesPath": "C:\\Users\\Adam.DESKTOP-1CEE98K.000\\.nuget\\packages\\",
-      "outputPath": "D:\\Downloads\\3643-Project\\3643 Calculator\\TestProject1\\obj\\",
+      "projectPath": "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\TestProject1\\TestProject1.csproj",
+      "packagesPath": "C:\\Users\\adaml\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\TestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Adam.DESKTOP-1CEE98K.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adaml\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1023,8 +1023,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Downloads\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj": {
-              "projectPath": "D:\\Downloads\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj"
+            "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj": {
+              "projectPath": "C:\\Users\\adaml\\OneDrive\\Documents\\GitHub\\3643-Project\\3643 Calculator\\3643 Calculator\\3643 Calculator.csproj"
             }
           }
         }
@@ -1033,11 +1033,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
