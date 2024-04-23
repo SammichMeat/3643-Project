@@ -8,10 +8,6 @@ namespace _3643_Calculator
     {
         public static void Main(string[] args)
         {
-            CalculatorEngine calc = new CalculatorEngine();
-            calc.SetDoubleA(10);
-            calc.SetDoubleB(0);
-            Console.WriteLine(calc.Divide());
         }
     }
 }
