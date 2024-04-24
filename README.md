@@ -17,13 +17,27 @@ Adam Tucker : [LinkedIn](https://www.linkedin.com/in/atucker84/)
 
 # Architecture
 
-The architecture section provides an overview of the web application's architecture, including the technologies used, design patterns, and high-level system components.
+![UML](https://www.plantuml.com/plantuml/svg/VL9DQnin4BtlhnYIYqDmUY-bP9Euf0T_K6zIA0KZhoPhqLbfaKQsGyb_hzJrncATzHviYNblD6_UktKiBFkQCa5aThNQArrbMIFAFw92kBWNL7eIR2nCTAKqmk9G-WGpKQCBIBo0IrBLXjVaCVkRGVXA4ix1aNqWjyNuNKCkvUWANiW81gKRppbSfzUx13ld3TfYP-ODMg7b57bZf1lTtDnSPGbigNIlPRz7G5I47xM9eBSiUpih_aahXW8TEzWg0RDuxzI_OjnWq3-aFe9RRi1qArW5LT_Ym66mXL6QdmLvTAiVoDvgj_JrwEg0Vb1R9N5rYiwr_8NMT9o9jSO6LYAxUxhJ6fN2cG77uwydrS7T_CGrBD5kqKBUDFqmTDkO6edaZlTdXRlaUcyqMqE4riNHqdkSvWZl5uvz-vM-W65lvRWmu_2NMBiWyRgpGKZFN_ZONrcOy9Ew2zS9u4cj2iM41Uuvs2IaozsnsdfrmWZfw8TZvkirMhTwKAu90xh9li6IKSuzDxuDmq2pDZp3sUawpWpdxIjfZFhTPaO745fL2lgkmzFl_F-iAJedgg5HxWc5lVFCHhTdTo37xHJc0L-49rwoO1ozPnK6rnsjJgt_38z5iOXmYax-rl28GX8w1tVMx1pQ68IIZ9TmcPYwKHAXLBOaR2rE2D2TuCkPvqBVMzJIr_GF)
 
-Development was split between two machines, one running Windows 10 and one running Windows 11, both being 64-bit versions. Functionality of the application cannot be vouched for on any other operating system.
+The application is using C# on the backend, HTML on the frontend, and NUnit and Playwright for unit tests and end-to-end tests respectively. For the web server app, the Model View Controller architectural pattern was utilized to provide functionality for the website.
+Development was split between two machines, one running Windows 10 and one running Windows 11, both being 64-bit versions. Functionality of the application cannot be vouched for on any other operating system. 
 
 # Environment
-Download .NET Framework 4.8 and .NET Core 8.0
+To prepare your environment to execute this application:
+1. [Download .NET Framework 4.8 and .NET Core 8.0](https://dotnet.microsoft.com/en-us/download).
+2. Install [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4)
+3. 
+
+
+
+To configure playwright, note the file location of the CalculatorEndToEndTests project folder and type the following to 
+``` 
+cd (file location of CalculatorEndToEndTests)
+```
+
 Here, you'll find information about the development environment required to work on the project, including software dependencies, tools, and setup instructions.
+WEE WOO ask jeff if this application should be cross-platform or not.
+
 
 # Executing the Web Application
 
