@@ -19,6 +19,8 @@ Adam Tucker : [LinkedIn](https://www.linkedin.com/in/atucker84/)
 
 The architecture section provides an overview of the web application's architecture, including the technologies used, design patterns, and high-level system components.
 
+Development was split between two machines, one running Windows 10 and one running Windows 11, both being 64-bit versions. Functionality of application cannot be vouched for on any other operating system.
+
 # Environment
 Download .NET Framework 4.8 and .NET Core 8.0
 Here, you'll find information about the development environment required to work on the project, including software dependencies, tools, and setup instructions.
