@@ -70,7 +70,7 @@ public class Tests
     }
 
     [Test]
-    public void Divide_FloatingPointValueAndZer0_ReturnsError()
+    public void Divide_FloatingPointValueAndZero_ReturnsError()
     {
         //preq-UNIT-TEST-6
 

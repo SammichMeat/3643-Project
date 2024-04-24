@@ -129,6 +129,7 @@ namespace _3643_Calculator
 
         public double Reciprocal()
         {
+            //preq-ENGINE-16
             if (doubleA == 0)
             {
                 throw new DivideByZeroException("Cannot Divide by Zero");
