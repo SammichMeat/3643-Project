@@ -1,4 +1,4 @@
-using _3643_Calculator.Properties;
+using _3643_Calculator;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel.Client;
 using NUnit.Framework;
 namespace TestProject1;

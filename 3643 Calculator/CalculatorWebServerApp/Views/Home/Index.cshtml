@@ -1,31 +1,497 @@
 ﻿@{
     ViewData["Title"] = "Calculator";
 }
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Calculator</title>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+<style>
+.clear-btn {
+    background: #EBEBEB;
+    color: black;
+    border: 3px black;
+}
+.error-color{
+    color: #B70F0A;
+}
+.errortext-color{
+    color: #ffffff;
+}
+.h1-color{
+    color: #000000;
+}
+.center{
+    margin: auto;
+}
+</style>
 <body>
 
-<div class="container">
-	<div class="calculator">
-    	<div class="row">
-        	<div class="col-md-6">
-              <h1 id="Title">Calculator</h1>
+<div class="Calculator">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3 text-center align-items-center">
+                <h1 class="h1-color">Calculator</h1>
             </div>
-            <div class="col-md-6">
-              <button type="button" class="btn btn-default pml-auto">Clear</button>
-			</div>
+            <div class="col-lg-3 text-center align-items-center">
+                <button type="button" id="clearButton" class="btn btn-basic clear-btn btn-block">Clear</button>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <div class="jumbotron" id="myJumbotron" style="background-color: #FFECD7;">
+                    <p class="lead" id="editableText">Enter value(s) below and select an operation</p>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3">
+                <form>
+                    <div class="form-group">
+                        <label for="inputA">Input A:</label>
+                        <input type="text" class="form-control" id="inputA" value="0">
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3">
+                <form>
+                    <div class="form-group">
+                        <label for="inputB">Input B:</label>
+                        <input type="text" class="form-control" id="inputB" value="0">
+                     </div>
+                </form>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3 text-center">
+                <button type="button" id="addButton" class="btn btn-basic clear-btn btn-block">A + B</button>
+            </div>
+            <div class="col-lg-3">
+                <button type="button" id="factorialButton" class="btn btn-basic clear-btn btn-block">A!</button>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3 text-center">
+                <button type="button" id="subtractButton" class="btn btn-basic clear-btn btn-block">A - B</button>
+            </div>
+            <div class="col-lg-3">
+                <button type="button" id="sineButton" class="btn btn-basic clear-btn btn-block">sin A</button>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3 text-center">
+                <button type="button" id="multiplyButton" class="btn btn-basic clear-btn btn-block">A * B</button>
+            </div>
+            <div class="col-lg-3">
+                <button type="button" id="cosineButton" class="btn btn-basic clear-btn btn-block">cos A</button>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3 text-center">
+                <button type="button" id="divideButton" class="btn btn-basic clear-btn btn-block">A / B</button>
+            </div>
+            <div class="col-lg-3">
+                <button type="button" id="tangentButton" class="btn btn-basic clear-btn btn-block">tan A</button>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3 text-center">
+                <button type="button" id="equivalentButton" class="btn btn-basic clear-btn btn-block">A == B</button>
+            </div>
+            <div class="col-lg-3">
+                <button type="button" id="reciprocalButton" class="btn btn-basic clear-btn btn-block">1 / A</button>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3 text-center">
+                <button type="button" id="powerButton" class="btn btn-basic clear-btn btn-block">A ^ B</button>
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+             <div class="col-lg-3"></div>
+            <div class="col-lg-3 text-center">
+                <button type="button" id="logButton" class="btn btn-basic clear-btn btn-block">A log B</button>
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+             <div class="col-lg-3"></div>
+            <div class="col-lg-3 text-center">
+                <button type="button" id="rootButton" class="btn btn-basic clear-btn btn-block">A root B</button>
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3"></div>
         </div>
     </div>
 </div>
 
 </body>
 </html>
+
+<script>
+$(document).ready(function () {
+    $('#clearButton').click(function () {
+                    $('#inputA').val("0");
+                    $('#inputB').val("0");
+                    $('#myJumbotron').css('background-color', '#FFECD7');
+                    $('.jumbotron p').text("Enter value(s) below and select an operation");
+                    $('#editableText').css('color', '#000000');
+                });          
+    $('#addButton').click(function () {
+                    var inputA = $('#inputA').val();
+                    var inputB = $('#inputB').val();
+                    if (!$.isNumeric(inputA) || !$.isNumeric(inputB)) 
+                    {
+                        $('#errorMsg').text("Error: Inputs must be numbers");
+                        $('#myJumbotron').css('background-color', '#B70F0A');
+                        $('#editableText').css('color', '#FFFFFF');
+                        $('.jumbotron p').text("Invalid Input, Numbers Only");
+                        return;
+                    }
+                            
+                    $('#myJumbotron').css('background-color', '#FFECD7');
+                    $('#editableText').css('color', '#000000');
+                    var inputA = $('#inputA').val();
+                    var inputB = $('#inputB').val();
+                            
+                    $.ajax({
+                        url: '@Url.Action("Add", "Home")',
+                        type: 'POST',
+                        data: { inputA: inputA, inputB: inputB },
+                        success: function (data) {
+                            // Update the content of the jumbotron with the returned data
+                            $('.jumbotron p').text(data.result);
+                        },
+                        error: function (xhr, status, error) {
+                            // Handle error response
+                        }
+                    });
+                });
+    $('#subtractButton').click(function () {
+                var inputA = $('#inputA').val();
+                var inputB = $('#inputB').val();
+                if (!$.isNumeric(inputA) || !$.isNumeric(inputB)) 
+                {
+                    $('#errorMsg').text("Error: Inputs must be numbers");
+                    $('#myJumbotron').css('background-color', '#B70F0A');
+                    $('#editableText').css('color', '#FFFFFF');
+                    $('.jumbotron p').text("Invalid Input, Numbers Only");
+                    return;
+                }
+                $('#myJumbotron').css('background-color', '#FFECD7');
+                $('#editableText').css('color', '#000000');
+                $.ajax({
+                    url: '@Url.Action("Subtract", "Home")',
+                        type: 'POST',
+                            data: { inputA: inputA, inputB: inputB },
+                            success: function (data) {
+                                // Update the content of the jumbotron with the returned data
+                                $('.jumbotron p').text(data.result);
+                            },
+                            error: function (xhr, status, error) {
+                                // Handle error response
+                            }
+                });
+            });
+    $('#multiplyButton').click(function () {
+                            var inputA = $('#inputA').val();
+                            var inputB = $('#inputB').val();
+                            if (!$.isNumeric(inputA) || !$.isNumeric(inputB)) 
+                            {
+                                $('#errorMsg').text("Error: Inputs must be numbers");
+                                $('#myJumbotron').css('background-color', '#B70F0A');
+                                $('#editableText').css('color', '#FFFFFF');
+                                $('.jumbotron p').text("Invalid Input, Numbers Only");
+                                return;
+                            }
+                            $('#myJumbotron').css('background-color', '#FFECD7');
+                            $('#editableText').css('color', '#000000');
+                            $.ajax({
+                                url: '@Url.Action("Multiply", "Home")',
+                                    type: 'POST',
+                                        data: { inputA: inputA, inputB: inputB },
+                                        success: function (data) {
+                                            // Update the content of the jumbotron with the returned data
+                                            $('.jumbotron p').text(data.result);
+                                        },
+                                        error: function (xhr, status, error) {
+                                            // Handle error response
+                                        }
+                            });
+                        });
+    $('#divideButton').click(function () {
+                            var inputA = $('#inputA').val();
+                            var inputB = $('#inputB').val();
+                            if (!$.isNumeric(inputA) || !$.isNumeric(inputB)) 
+                            {
+                                $('#errorMsg').text("Error: Inputs must be numbers");
+                                $('#myJumbotron').css('background-color', '#B70F0A');
+                                $('#editableText').css('color', '#FFFFFF');
+                                $('.jumbotron p').text("Invalid Input, Numbers Only");
+                                return;
+                            }
+                            $('#myJumbotron').css('background-color', '#FFECD7');
+                            $('#editableText').css('color', '#000000');
+                            $.ajax({
+                                url: '@Url.Action("Divide", "Home")',
+                                    type: 'POST',
+                                        data: { inputA: inputA, inputB: inputB },
+                                        success: function (data) {
+                                            // Update the content of the jumbotron with the returned data
+                                            $('.jumbotron p').text(data.result);
+                                        },
+                                        error: function (xhr, status, error) {
+                                            $('#myJumbotron').css('background-color', '#B70F0A');
+                                            $('#editableText').css('color', '#FFFFFF');
+                                            $('.jumbotron p').text(inputA+" / "+inputB+" = Not a Number");
+                                        }
+                            });
+                        });
+    $('#equivalentButton').click(function () {
+                var inputA = $('#inputA').val();
+                var inputB = $('#inputB').val();
+                if (!$.isNumeric(inputA) || !$.isNumeric(inputB)) 
+                {
+                    $('#errorMsg').text("Error: Inputs must be numbers");
+                    $('#myJumbotron').css('background-color', '#B70F0A');
+                    $('#editableText').css('color', '#FFFFFF');
+                    $('.jumbotron p').text("Invalid Input, Numbers Only");
+                    return;
+                }
+                $('#myJumbotron').css('background-color', '#FFECD7');
+                $('#editableText').css('color', '#000000');
+                $.ajax({
+                    url: '@Url.Action("Equals", "Home")',
+                    type: 'POST',
+                    data: { inputA: inputA, inputB: inputB },
+                    success: function (data) {
+                    $('.jumbotron p').text(data.result);
+                    },
+                    error: function (xhr, status, error) {}
+                });
+            });
+    $('#powerButton').click(function () {
+                    var inputA = $('#inputA').val();
+                    var inputB = $('#inputB').val();
+                    if (!$.isNumeric(inputA) || !$.isNumeric(inputB)) 
+                    {
+                        $('#errorMsg').text("Error: Inputs must be numbers");
+                        $('#myJumbotron').css('background-color', '#B70F0A');
+                        $('#editableText').css('color', '#FFFFFF');
+                        $('.jumbotron p').text("Invalid Input, Numbers Only");
+                        return;
+                    }
+                    $('#myJumbotron').css('background-color', '#FFECD7');
+                    $('#editableText').css('color', '#000000');
+                    $.ajax({
+                        url: '@Url.Action("Power", "Home")',
+                        type: 'POST',
+                        data: { inputA: inputA, inputB: inputB },
+                        success: function (data) {
+                        $('.jumbotron p').text(data.result);
+                        },
+                        error: function (xhr, status, error) {}
+                    });
+                });
+    $('#logButton').click(function () {
+                    var inputA = $('#inputA').val();
+                    var inputB = $('#inputB').val();
+                    if (!$.isNumeric(inputA) || !$.isNumeric(inputB)) 
+                    {
+                        $('#errorMsg').text("Error: Inputs must be numbers");
+                        $('#myJumbotron').css('background-color', '#B70F0A');
+                        $('#editableText').css('color', '#FFFFFF');
+                        $('.jumbotron p').text("Invalid Input, Numbers Only");
+                        return;
+                    }
+                    $('#myJumbotron').css('background-color', '#FFECD7');
+                    $('#editableText').css('color', '#000000');
+                    $.ajax({
+                        url: '@Url.Action("Log", "Home")',
+                        type: 'POST',
+                        data: { inputA: inputA, inputB: inputB },
+                        success: function (data) {
+                        $('.jumbotron p').text(data.result);
+                        },
+                        error: function (xhr, status, error) {
+                            $('#myJumbotron').css('background-color', '#B70F0A');
+                            $('#editableText').css('color', '#FFFFFF');
+                            $('.jumbotron p').text(inputA+" log "+inputB+" = Input A cannot be zero or negative, and Input B cannot be zero");
+                        }
+                    });
+                });
+    $('#rootButton').click(function () {
+                        var inputA = $('#inputA').val();
+                        var inputB = $('#inputB').val();
+                        if (!$.isNumeric(inputA) || !$.isNumeric(inputB)) 
+                        {
+                            $('#errorMsg').text("Error: Inputs must be numbers");
+                            $('#myJumbotron').css('background-color', '#B70F0A');
+                            $('#editableText').css('color', '#FFFFFF');
+                            $('.jumbotron p').text("Invalid Input, Numbers Only");
+                            return;
+                        }
+                        $('#myJumbotron').css('background-color', '#FFECD7');
+                        $('#editableText').css('color', '#000000');
+                        $.ajax({
+                            url: '@Url.Action("Root", "Home")',
+                            type: 'POST',
+                            data: { inputA: inputA, inputB: inputB },
+                            success: function (data) {
+                            $('.jumbotron p').text(data.result);
+                            },
+                            error: function (xhr, status, error) {
+                                $('#myJumbotron').css('background-color', '#B70F0A');
+                                $('#editableText').css('color', '#FFFFFF');
+                                $('.jumbotron p').text(inputA+" log "+inputB+" = Input B cannot be zero");
+                            }
+                        });
+                    });
+    $('#factorialButton').click(function () {
+                            var inputA = $('#inputA').val();
+                            var inputB = $('#inputB').val();
+                            if (!$.isNumeric(inputA)) 
+                            {
+                                $('#errorMsg').text("Error: Input must be a number");
+                                $('#myJumbotron').css('background-color', '#B70F0A');
+                                $('#editableText').css('color', '#FFFFFF');
+                                $('.jumbotron p').text("Invalid Input, Numbers Only");
+                                return;
+                            }
+                            $('#myJumbotron').css('background-color', '#FFECD7');
+                            $('#editableText').css('color', '#000000');
+                            $.ajax({
+                                url: '@Url.Action("Factorial", "Home")',
+                                type: 'POST',
+                                data: { inputA: inputA, inputB: inputB  },
+                                success: function (data) {
+                                $('.jumbotron p').text(data.result);
+                                },
+                                error: function (xhr, status, error) {}
+                            });
+                        });
+    $('#sineButton').click(function () {
+        var inputA = $('#inputA').val();
+        var inputB = $('#inputB').val();
+        if (!$.isNumeric(inputA)) 
+        {
+            $('#errorMsg').text("Error: Input must be a number");
+            $('#myJumbotron').css('background-color', '#B70F0A');
+            $('#editableText').css('color', '#FFFFFF');
+            $('.jumbotron p').text("Invalid Input, Numbers Only");
+            return;
+        }
+        $('#myJumbotron').css('background-color', '#FFECD7');
+        $('#editableText').css('color', '#000000');
+        $.ajax({
+            url: '@Url.Action("Sine", "Home")',
+            type: 'POST',
+            data: { inputA: inputA, inputB: inputB  },
+            success: function (data) {
+            $('.jumbotron p').text(data.result);
+            },
+            error: function (xhr, status, error) {}
+        });
+    });
+    $('#cosineButton').click(function () {
+            var inputA = $('#inputA').val();
+            var inputB = $('#inputB').val();
+            if (!$.isNumeric(inputA)) 
+            {
+                $('#errorMsg').text("Error: Input must be a number");
+                $('#myJumbotron').css('background-color', '#B70F0A');
+                $('#editableText').css('color', '#FFFFFF');
+                $('.jumbotron p').text("Invalid Input, Numbers Only");
+                return;
+            }
+            $('#myJumbotron').css('background-color', '#FFECD7');
+            $('#editableText').css('color', '#000000');
+            $.ajax({
+                url: '@Url.Action("Cosine", "Home")',
+                type: 'POST',
+                data: { inputA: inputA, inputB: inputB  },
+                success: function (data) {
+                $('.jumbotron p').text(data.result);
+                },
+                error: function (xhr, status, error) {}
+            });
+        });
+    $('#tangentButton').click(function () {
+            var inputA = $('#inputA').val();
+            var inputB = $('#inputB').val();
+            if (!$.isNumeric(inputA)) 
+            {
+                $('#errorMsg').text("Error: Input must be a number");
+                $('#myJumbotron').css('background-color', '#B70F0A');
+                $('#editableText').css('color', '#FFFFFF');
+                $('.jumbotron p').text("Invalid Input, Numbers Only");
+                return;
+            }
+            $('#myJumbotron').css('background-color', '#FFECD7');
+            $('#editableText').css('color', '#000000');
+            $.ajax({
+                url: '@Url.Action("Tangent", "Home")',
+                type: 'POST',
+                data: { inputA: inputA, inputB: inputB  },
+                success: function (data) {
+                $('.jumbotron p').text(data.result);
+                },
+                error: function (xhr, status, error) {}
+            });
+        });
+    $('#reciprocalButton').click(function () {
+            var inputA = $('#inputA').val();
+            var inputB = $('#inputB').val();
+            if (!$.isNumeric(inputA)) 
+            {
+                $('#errorMsg').text("Error: Input must be a number");
+                $('#myJumbotron').css('background-color', '#B70F0A');
+                $('#editableText').css('color', '#FFFFFF');
+                $('.jumbotron p').text("Invalid Input, Numbers Only");
+                return;
+            }
+            $('#myJumbotron').css('background-color', '#FFECD7');
+            $('#editableText').css('color', '#000000');
+            $.ajax({
+                url: '@Url.Action("Reciprocal", "Home")',
+                type: 'POST',
+                data: { inputA: inputA, inputB: inputB  },
+                success: function (data) {
+                $('.jumbotron p').text(data.result);
+                },
+                error: function (xhr, status, error) {
+                    $('#myJumbotron').css('background-color', '#B70F0A');
+                    $('#editableText').css('color', '#FFFFFF');
+                    $('.jumbotron p').text(" 1 / "+inputA+" = Not a Number");
+                }
+            });
+        });});
+</script>
+
+
+

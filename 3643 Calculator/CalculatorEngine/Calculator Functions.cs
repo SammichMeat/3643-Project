@@ -1,7 +1,6 @@
 using System;
-using System.Diagnostics;
 
-namespace _3643_Calculator.Properties
+namespace _3643_Calculator
 {
     public class CalculatorEngine
     {
