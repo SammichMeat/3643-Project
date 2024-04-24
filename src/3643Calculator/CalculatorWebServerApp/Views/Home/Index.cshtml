@@ -41,7 +41,7 @@
                 <h1 class="h1-color">Calculator</h1>
             </div>
             <div class="col-lg-3 text-center align-items-center">
-                <button type="button" id="clearButton" class="btn btn-basic clear-btn btn-block">Clear</button>
+                <button type="button" id="clearButton" data-testid="clearButton" class="btn btn-basic clear-btn btn-block">Clear</button>
             </div>
             <div class="col-lg-3"></div>
         </div>
@@ -49,7 +49,7 @@
             <div class="col-lg-4"></div>
             <div class="col-lg-4">
                 <div class="jumbotron" id="myJumbotron" style="background-color: #FFECD7;">
-                    <p class="lead" id="editableText">Enter value(s) below and select an operation</p>
+                    <p class="lead" id="editableText" data-testid="jumbotronText">Enter value(s) below and select an operation.</p>
                 </div>
             </div>
             <div class="col-lg-4"></div>
@@ -60,7 +60,7 @@
                 <form>
                     <div class="form-group">
                         <label for="inputA">Input A:</label>
-                        <input type="text" class="form-control" id="inputA" value="0">
+                        <input type="text" class="form-control" id="inputA" data-testid="inputA" value="0">
                     </div>
                 </form>
             </div>
@@ -68,7 +68,7 @@
                 <form>
                     <div class="form-group">
                         <label for="inputB">Input B:</label>
-                        <input type="text" class="form-control" id="inputB" value="0">
+                        <input type="text" class="form-control" id="inputB" data-testid="inputB" value="0">
                      </div>
                 </form>
             </div>
@@ -77,7 +77,7 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-3"></div>
             <div class="col-lg-3 text-center">
-                <button type="button" id="addButton" class="btn btn-basic clear-btn btn-block">A + B</button>
+                <button type="button" id="addButton" data-testid="addButton" class="btn btn-basic clear-btn btn-block">A + B</button>
             </div>
             <div class="col-lg-3">
                 <button type="button" id="factorialButton" class="btn btn-basic clear-btn btn-block">A!</button>
@@ -107,7 +107,7 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-3"></div>
             <div class="col-lg-3 text-center">
-                <button type="button" id="divideButton" class="btn btn-basic clear-btn btn-block">A / B</button>
+                <button type="button" id="divideButton" data-testid="divideButton" class="btn btn-basic clear-btn btn-block">A / B</button>
             </div>
             <div class="col-lg-3">
                 <button type="button" id="tangentButton" class="btn btn-basic clear-btn btn-block">tan A</button>
@@ -160,7 +160,7 @@ $(document).ready(function () {
                     $('#inputA').val("0");
                     $('#inputB').val("0");
                     $('#myJumbotron').css('background-color', '#FFECD7');
-                    $('.jumbotron p').text("Enter value(s) below and select an operation");
+                    $('.jumbotron p').text("Enter value(s) below and select an operation.");
                     $('#editableText').css('color', '#000000');
                 });          
     $('#addButton').click(function () {
