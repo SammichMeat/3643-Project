@@ -24,7 +24,7 @@ Development was split between two machines, one running Windows 10 and one runni
 
 # Environment
 To prepare your environment to execute this application:
-1. [Download .NET Framework 4.8 and .NET Core 8.0](https://dotnet.microsoft.com/en-us/download).
+1. [Download .NET Core 8.0](https://dotnet.microsoft.com/en-us/download).
 2. Install [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4)
 3. 
 
