@@ -73,6 +73,7 @@ Passed!  - Failed:     0, Passed:    20, Skipped:     0, Total:    20, Duration:
 
 # Reviewing Unit Test Coverage
 
+<img src="https://github.com/SammichMeat/3643-Project/blob/main/CalcEngineCoverage.PNG">
 Here, you'll learn how to review the unit test coverage of the web application. It includes information on measuring code coverage, identifying areas with low coverage, and improving coverage.
 
 # Executing End-To-End Tests
