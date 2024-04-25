@@ -73,12 +73,28 @@ Passed!  - Failed:     0, Passed:    20, Skipped:     0, Total:    20, Duration:
 
 # Reviewing Unit Test Coverage
 
+Below is the coverage achieved of the CalculatorEngine class from CalculatorEngineUnitTests:
+
 <img src="https://github.com/SammichMeat/3643-Project/blob/main/CalcEngineCoverage.PNG">
-Here, you'll learn how to review the unit test coverage of the web application. It includes information on measuring code coverage, identifying areas with low coverage, and improving coverage.
+
+Full 100% coverage of all calculator logic and paths was achieved in 20 unit tests. Window shown is JetBrains Rider and its coverage visual.
 
 # Executing End-To-End Tests
+The end-to-end tests test various aspects of the code such as the page title and error displays.
+1. The [web application](#executing-the-web-application) must first be running.
+2. In a new command line window, navigate to the CalculatorEndToEndTests folder: `cd ...\src\3643Calculator\CalculatorEndToEndTests`
+3. Execute the tests by using: `dotnet test`
+4. Test will run and text similar to the following will be displayed:
+```
+Test run for ...\src\3643Calculator\CalculatorEndToEndTests\bin\Debug\net8.0\CalculatorEndToEndTests.dll (.NETCoreApp,Version=v8.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.9.0 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
 
-Instructions for running end-to-end tests for the web application are provided in this section. It covers setup requirements, test execution, and analyzing test results.
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:     5, Skipped:     0, Total:     5, Duration: 1 s - CalculatorEndToEndTests.dll (net8.0)
+```
 
 # Final Video Presentation
 
