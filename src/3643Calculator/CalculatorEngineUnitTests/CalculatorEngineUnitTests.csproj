@@ -32,7 +32,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\CalculatorEngine\CalculatorEngine.csproj" />
+      <ProjectReference Include="..\CalculatorEngineNet8\CalculatorEngineNet8.csproj" />
     </ItemGroup>
 
 </Project>

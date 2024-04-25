@@ -8,12 +8,8 @@
         <RootNamespace>WebApplication1</RootNamespace>
     </PropertyGroup>
 
-    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-      <PlatformTarget>x64</PlatformTarget>
-    </PropertyGroup>
-
     <ItemGroup>
-      <ProjectReference Include="..\CalculatorEngine\CalculatorEngine.csproj" />
+      <ProjectReference Include="..\CalculatorEngineNet8\CalculatorEngineNet8.csproj" />
     </ItemGroup>
 
 </Project>
