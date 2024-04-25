@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\CalculatorEngineNet8\CalculatorEngineNet8.csproj" />
+      <ProjectReference Include="..\CalculatorEngine\CalculatorEngine.csproj" />
     </ItemGroup>
 
 </Project>

@@ -96,7 +96,9 @@ public class Tests
         var a = _calc.Equals();
 
         //assert
+#pragma warning disable NUnit2021
         Assert.That(a, Is.EqualTo(0));
+#pragma warning restore NUnit2021
     }
 
     [Test]
@@ -111,8 +113,9 @@ public class Tests
         //act
         var a = _calc.Equals();
 
-        //assert
+#pragma warning disable NUnit2021
         Assert.That(a, Is.EqualTo(1));
+#pragma warning restore NUnit2021
     }
 
     [Test]
